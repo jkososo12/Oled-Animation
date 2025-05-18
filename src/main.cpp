@@ -2,10 +2,6 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include "bitmap/happy.h"
-#include "bitmap/sad.h"
-// #include "bitmap/on.h"
-// #include "bitmap/lain.h"
 
 #define SCREEN_I2C_ADDR 0x3C 
 #define SCREEN_WIDTH 128    
@@ -36,17 +32,5 @@ void setup() {
 }
 int frame = 0;
 void loop() {
-  // nampilin gambar happy
-  display.clearDisplay();
-  display.drawBitmap(32, 0, happy[frame], WIDTH_HAPPY, HEIGHT_HAPPY, 1);
-  display.display();
-  frame = (frame + 1) % COUNT_HAPPY;
-  delay(FRAME_DELAY);
 
-  // nampilin gambar sad
-  display.clearDisplay();
-  display.drawBitmap(32, 0, sad[frame], WIDTH_SAD, HEIGHT_SAD, 1);
-  display.display();
-  frame = (frame + 1) % COUNT_SAD;
-  delay(FRAME_DELAY);
 }
