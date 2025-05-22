@@ -1,5 +1,5 @@
 # 💫 About Me:
-🤝 I’m looking for help with Linux Project<br>🌱 I’m currently learning Embedded Engineer<br>⚡ Fun fact I Like callmness<br> 
+🤝 I’m looking for help with Linux Project<br>⚡I’m currently learning Embedded Engineer<br>🌱Fun fact I Like callmness<br> 
 
 
 ## 🌐 Socials:
