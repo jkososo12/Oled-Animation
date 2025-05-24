@@ -2,6 +2,7 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include "happy.h"
 
 #define SCREEN_I2C_ADDR 0x3C 
 #define SCREEN_WIDTH 128    
@@ -10,10 +11,6 @@
 
 Adafruit_SSD1306 display(128, 64, &Wire, OLED_RST_PIN);
 
-#define FRAME_DELAY (42)
-
-#define LED_BIRU 3
-#define LED_MERAH 5
 void setup() {
   Serial.begin(9600);
 
@@ -26,9 +23,10 @@ void setup() {
 
   display.display(); 
   display.begin(SSD1306_SWITCHCAPVCC, SCREEN_I2C_ADDR);
-
-  pinMode(LED_BIRU, OUTPUT); 
-  pinMode(LED_MERAH, OUTPUT);
+  display.clearDisplay();
+  display.drawBitmap(0, 0, epd_bitmap_happy_face_clip_art_smiley_face_clipart_3_clipartcow, SCREEN_WIDTH, SCREEN_HEIGHT, WHITE);
+  display.display();
+  delay(2000); // Display the image for 2 seconds
 }
 int frame = 0;
 void loop() {
