@@ -24,7 +24,7 @@ void setup() {
   display.display(); 
   display.begin(SSD1306_SWITCHCAPVCC, SCREEN_I2C_ADDR);
   display.clearDisplay();
-  display.drawBitmap(0, 0, epd_bitmap_happy_face_clip_art_smiley_face_clipart_3_clipartcow, SCREEN_WIDTH, SCREEN_HEIGHT, WHITE);
+  display.drawBitmap(0, 0, senyum, SCREEN_WIDTH, SCREEN_HEIGHT, WHITE);
   display.display();
   delay(2000); // Display the image for 2 seconds
 }
