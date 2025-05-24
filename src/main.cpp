@@ -2,7 +2,7 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include "happy.h"
+#include "../src/bitmap/happy.h"
 
 #define SCREEN_I2C_ADDR 0x3C 
 #define SCREEN_WIDTH 128    
