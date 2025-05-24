@@ -417,7 +417,7 @@ const unsigned char smiley [] PROGMEM = {
 
 const int epd_bitmap_allArray_LEN = 1;
 const unsigned char* epd_bitmap_allArray[1] = {
-	epd_bitmap_smiley
+	smiley
 };
 
 #endif
